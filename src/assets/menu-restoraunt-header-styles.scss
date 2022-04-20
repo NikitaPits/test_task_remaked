@@ -1,0 +1,106 @@
+@import "variables";
+@import "mixin";
+@import "fonts";
+.menu-restaurant__head{
+@include flexEnd(column);
+  height: 500px;
+  position: relative;
+  background-position: 24%;
+  opacity: 1;
+  overflow: hidden;
+  top: 90px;
+  align-items:center;
+}
+.menus-restaurant__head>* {
+  z-index: 1;
+}
+.menu-restaurant__head, .head__bg:after{
+  background-color: #140906;
+  content: "";
+  opacity: .65;
+}
+.menus-restaurant__head .bg__img, .menus-restaurant__head .head__bg, .menus-restaurant__head .head__bg:after {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menus-restaurant__head .bg__img {
+  background-position: 50%;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+}
+.menus-restaurant__head>* {
+  z-index: 1;
+}
+.head__bg{
+  background-image: url("menus-1.jpg") ;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  z-index: 1;
+}
+.bg__img{
+  background-position: 50%;
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+}
+.head__title{
+  z-index: 1;
+  position: relative;
+  color: white;
+}
+.title__h{
+  font-family: Muli-ExtraBold;
+  letter-spacing: .03em;
+  margin-bottom: 20px;
+  opacity: 1;
+  text-transform: uppercase;
+  line-height: 1.33em;
+  font-weight: 700;
+  font-size: 18px;
+}
+.head__selector{
+  background-color: rgba(20,9,6,.1);
+  z-index: 1;
+  width: 100%;
+  margin-top: 0;
+  font-family: RockwellStd-Light;
+  color: white;
+}
+.selector__one{
+  margin-left: 5%;
+}
+.menus-restaurant__head .selector__one:first-of-type {
+  margin-left: 0;
+  }
+.menus-restaurant__head .selector__one_active>.head__selector-title {
+  letter-spacing: .03em;
+}
+.menus-restaurant__head .selector__one:after {
+  background-color: hsla(0,0%,100%,0);
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 4px;
+  position: absolute;
+  right: 4px;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+}
+.head__selector-title{
+  margin: 0;
+  color: white;
+  font-size: 3.125rem;
+  line-height: 1.1em;
+}

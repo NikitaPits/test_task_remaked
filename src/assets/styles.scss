@@ -1,0 +1,70 @@
+@import "variables";
+@import "mixin";
+@import "fonts";
+@import "header-styles";
+@import "menu-restoraunt-header-styles";
+
+.app{
+  background-color: $primary-color;
+  height: 100%;
+}
+
+body{
+margin: 0;
+}
+html{
+  color: #fff;
+  font-family: RockwellStd;
+  background-color: $primary-color;
+  font-size: 1em;
+  line-height: 1.5;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+span{
+  bottom: 4.5px;
+  font-family: Muli-Bold;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  position: relative;
+  text-transform: lowercase;
+}
+h1{
+  margin: 0;
+  padding: 0;
+}
+*, :after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.main-container{
+  margin: 0 8%;
+  width: 84%;
+  display: flex;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #fff;
+}
+blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, ol, p, pre, ul {
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
