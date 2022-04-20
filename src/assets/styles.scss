@@ -3,21 +3,26 @@
 @import "fonts";
 @import "header-styles";
 @import "menu-restoraunt-header-styles";
+@import "Menus-restaurant";
+@import "menu-body";
+@import "menu-page";
 
 .app{
   background-color: $primary-color;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-body{
-margin: 0;
-}
 html{
   color: #fff;
   font-family: RockwellStd;
   background-color: $primary-color;
   font-size: 1em;
   line-height: 1.5;
+  overflow-y: scroll;
+  min-height: 100%;
 }
 li {
   list-style-type: none;
@@ -38,10 +43,6 @@ span{
   position: relative;
   text-transform: lowercase;
 }
-h1{
-  margin: 0;
-  padding: 0;
-}
 *, :after, :before {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
@@ -49,10 +50,11 @@ h1{
 .main-container{
   margin: 0 8%;
   width: 84%;
-  display: flex;
+  display:flex;
+  height: auto;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  font-weight: unset;
   color: #fff;
 }
 blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, ol, p, pre, ul {
@@ -61,10 +63,27 @@ blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, 
 }
 h2 {
   display: block;
-  font-size: 1.5em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
+}
+h3{
+    color: #140906;
+  font-size: 40px;
+  }
+h6 {
+  font-size: 15px;
+  color: #140906;
+  display: block;
+  margin-block-start: 2.33em;
+  margin-block-end: 2.33em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  font-family: Muli-ExtraBold;
+  letter-spacing: .03em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+p{
+  font-family: RockwellStd;
 }

@@ -1,0 +1,111 @@
+@import "variables";
+@import "mixin";
+@import "fonts";
+
+.menu__box{
+  background-color: #fff;
+  padding: 48px 70px 70px;
+}
+.page__logotype {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+}
+.page__logotype::before, .page__logotype::after{
+  background-color: #d6d6d6;
+  content: "";
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  height: 3px;
+  margin-bottom: 16px;
+}
+
+.box__page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page__logotype-svg{
+  color: black;
+  fill: black;
+  -webkit-transition: width .3s ease,height .3s ease;
+  transition: width .3s ease,height .3s ease;
+  -webkit-transition-delay: .2s,.2s;
+  transition-delay: .2s,.2s;
+  padding-right: 5%;
+  padding-left: 5%;
+  width: 130px;
+}
+.page__top {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border-bottom: 2px solid #d6d6d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 52px;
+  padding-bottom: 73px;
+}
+.panel-menu .top__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 54%;
+  color: #140906;
+}
+.panel-menu h6.filter__title {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.filter__selector {
+  position: relative;
+  width: 80%;
+}
+.panel-menu .selector__list-f {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 1;
+}
+.panel-menu h6.list-f__one_active {
+  color: #140906;
+  cursor: pointer;
+  margin-left: 21px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: color .2s ease,background-color .2s ease;
+  transition: color .2s ease,background-color .2s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+.panel-menu h6.list-f__one {
+  color: #a59e9e;
+  cursor: pointer;
+  margin-left: 21px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: color .2s ease,background-color .2s ease;
+  transition: color .2s ease,background-color .2s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}

@@ -7,9 +7,7 @@
 
 <script setup>
 import SiteHeader from "@/components/Header/SiteHeader";
-import MainRestaurantBody from "@/components/MainRestaurant/MainRestaurantBody";
-
-
+import MainRestaurantBody from "@/components/site-body/MainRestaurant/MainRestaurantBody";
 </script>
 
 <style>
