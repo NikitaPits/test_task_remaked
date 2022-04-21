@@ -11,7 +11,7 @@ import MenuBoxPage from "@/components/site-body/MainRestaurant/MenuContent/MenuP
 const props = defineProps({
   actualName:{
     type: String,
-    required: true
+    default: '',
   }
 })
 </script>

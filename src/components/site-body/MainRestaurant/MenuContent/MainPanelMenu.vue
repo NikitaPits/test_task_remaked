@@ -1,49 +1,56 @@
 <template>
   <section>
     <div class="panel-menu__сuisine">
-    <panel-menu-item
+      <panel-menu-item
         v-for="name in props.names"
         :name="name"
-        :panelItemState = "name.id===activeId"
+        :panelItemState="name.id === activeElem.id"
         :key="name.id"
-    @was-clicked="refreshMenuItems">
-      {{name.name}}
-  </panel-menu-item>
-  </div>
-    <menu-page-main class="panel_menu__menu"
-    :actualName="actualName"
+        @was-clicked="refreshMenuItems"
+      >
+        {{ name.name }}
+      </panel-menu-item>
+    </div>
+    <menu-page-main 
+      class="panel_menu__menu"
+      :actualName="activeElem.name"
     />
   </section>
 </template>
 
 <script setup>
-import {ref} from "vue";
+import { ref, toRefs, watch } from "vue"; // eslint-disable-line
 import PanelMenuItem from "@/components/site-body/MainRestaurant/MenuContent/PanelMenuItem";
 import MenuPageMain from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageMain";
 import {defineProps} from "vue";
 const props = defineProps({
   names: {
     value: Array,
-    required: true,
-    default: function (){
-      return  [
-        {name: 'à la carte menu', id: '1'},
+    default: () => (
+      [
+        { name: 'à la carte menu2222', id: '1' },
         {name: 'rose brunch', id: '2'},
         {name: 'cocktails', id: '3'},
         {name: 'desserts', id: '4'},
       ]
-    }
+    ),
   }
-})
-let activeId = ref('1');
-console.log(props.names)
-let actualName = ref(props.names[0].name)
-    function refreshMenuItems(n){
-      activeId.value = n;
-      actualName.value = props.names[activeId.value-1].name
-    }
+});
 
+function getStartElem(val) {
+  return (val && val.length) ? val[0] : {};
+}
+const activeElem = ref(getStartElem());
 
+watch(() => { return props.names; }, (val) => {
+  activeElem.value = getStartElem(val);
+});
+
+function refreshMenuItems(id) {
+  activeElem.value = props.names.find((name) => {
+    return name.id === id;
+  });
+}
 </script>
 
 <style scoped>
