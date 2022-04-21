@@ -25,14 +25,22 @@ const props = defineProps({
   names: {
     value: Array,
     required: true,
+    default: function (){
+      return  [
+        {name: 'à la carte menu', id: '1'},
+        {name: 'rose brunch', id: '2'},
+        {name: 'cocktails', id: '3'},
+        {name: 'desserts', id: '4'},
+      ]
+    }
   }
 })
 let activeId = ref('1');
-let actualName = ref('1')
+console.log(props.names)
+let actualName = ref(props.names[0].name)
     function refreshMenuItems(n){
       activeId.value = n;
       actualName.value = props.names[activeId.value-1].name
-      console.log(actualName.value)
     }
 
 

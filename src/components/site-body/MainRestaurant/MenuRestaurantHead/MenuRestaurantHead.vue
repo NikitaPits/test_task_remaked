@@ -20,7 +20,6 @@ let names = ref([]);
 function changeMenu(n){
   names.value=n;
   emits('change-menu', n)
-  console.log(n)
 }
 </script>
 
