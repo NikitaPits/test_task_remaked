@@ -2,7 +2,7 @@
   <section>
     <div class="panel-menu__сuisine">
     <panel-menu-item
-        v-for="name in names"
+        v-for="name in props.names"
         :name="name"
         :panelItemState = "name.id===activeId"
         :key="name.id"
@@ -11,7 +11,7 @@
   </panel-menu-item>
   </div>
     <menu-page-main class="panel_menu__menu"
-    :actualName="names[activeId-1].name"
+    :actualName="actualName"
     />
   </section>
 </template>
@@ -23,20 +23,16 @@ import MenuPageMain from "@/components/site-body/MainRestaurant/MenuContent/Menu
 import {defineProps} from "vue";
 const props = defineProps({
   names: {
-    value: Object,
-    required: true
+    value: Array,
+    required: true,
   }
 })
-let names = ref(    [
-  {name: 'à la carte menu', id: '1'},
-  {name: 'rose brunch', id: '2'},
-  {name: 'cocktails', id: '3'},
-  {name: 'desserts', id: '4'},
-])
 let activeId = ref('1');
+let actualName = ref('1')
     function refreshMenuItems(n){
-      activeId.value = ""+n;
-      console.log(props.names)
+      activeId.value = n;
+      actualName.value = props.names[activeId.value-1].name
+      console.log(actualName.value)
     }
 
 

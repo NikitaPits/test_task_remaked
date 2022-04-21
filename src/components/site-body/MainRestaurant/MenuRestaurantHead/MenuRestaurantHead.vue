@@ -12,11 +12,15 @@
 import MenuRestaurantHeadBg from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadBg";
 import MenuRestaurantHeadTitle from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadTitle";
 import MenuRestaurantHeadSelector from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadSelector";
+import {defineEmits} from "vue";
 import {ref} from "vue";
+const emits = defineEmits(['change-menu'])
 
 let names = ref([]);
 function changeMenu(n){
   names.value=n;
+  emits('change-menu', n)
+  console.log(n)
 }
 </script>
 
