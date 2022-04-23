@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "gh": "^2.8.9",
+    "git": "^0.1.5",
     "vue": "^3.2.13"
   },
   "devDependencies": {
