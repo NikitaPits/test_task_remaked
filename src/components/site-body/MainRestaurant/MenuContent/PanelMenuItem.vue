@@ -1,7 +1,7 @@
 <template>
 
   <p v-bind:class="[props.panelItemState ? 'сuisine__one_active':'сuisine__one']"
-      v-on:click="$emit('was-clicked', props.name.id)"
+      v-on:click="$emit('was-clicked', props.menu.id)"
   >
     <slot></slot>
   </p>
@@ -10,7 +10,7 @@
 <script setup>
 import {defineProps} from "vue";
 const props = defineProps({
-  name:{value: Object,
+  menu:{value: Object,
     required: true},
   panelItemState:{
     value: Boolean,

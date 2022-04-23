@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixin";
 @import "fonts";
+@import "menu-page-chapters";
 
 .menu__box{
   background-color: #fff;
@@ -29,6 +30,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.box__page_disabled{
+  flex-direction: column;
+  justify-content: center;
+  display: none;
 }
 
 .page__logotype-svg{

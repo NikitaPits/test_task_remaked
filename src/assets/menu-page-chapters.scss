@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixin";
+@import "fonts";
+
+.dish-container{
+  letter-spacing: .02em;
+  font-weight: 300;
+  color: #140906;
+  display: flex;
+  align-items: flex-start;
+}
+.dish{
+  margin-right: 8%;
+  font-size: 21px;
+  font-family: inherit;
+  font-weight: inherit;
+  bottom: inherit;
+}
+.dish-price{
+  color: #a59e9e;
+  font-family: Muli-Bold;
+  margin-left: auto;
+  font-size: 16px;
+}
+.dish-ingredients{
+  color: #a59e9e;
+  bottom: 0;
+  font-size: 21px;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.chapter-title{
+  letter-spacing: .02em;
+  font-size: 21px;
+  font-weight: 300;
+  color: #140906;
+  font-family: Muli-ExtraBold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(20,9,6,.5);
+}
+.menu-chapter-box{
+  width: 47%;
+  padding-top: 71px;
+}
+.main-box-content{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  flex-wrap: wrap;
+}

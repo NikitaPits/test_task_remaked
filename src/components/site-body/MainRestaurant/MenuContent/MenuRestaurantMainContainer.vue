@@ -2,9 +2,11 @@
 <div>
   <main-description class="main__description" />
   <main-panel-menu
-    :names="props.names"
+    :menus="props.menus"
     class="panel-menu"
-  />
+  >
+
+  </main-panel-menu>
 </div>
 </template>
 
@@ -13,7 +15,7 @@ import MainDescription from "@/components/site-body/MainRestaurant/MenuContent/M
 import MainPanelMenu from "@/components/site-body/MainRestaurant/MenuContent/MainPanelMenu";
 import {defineProps} from "vue";
 const props = defineProps({ // eslint-disable-line
-  names: {
+  menus: {
     value: Object,
     required: true,
   }

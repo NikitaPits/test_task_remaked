@@ -2,18 +2,19 @@
   <section>
     <div class="panel-menu__сuisine">
       <panel-menu-item
-        v-for="name in props.names"
-        :name="name"
-        :panelItemState="name.id === activeElem.id"
-        :key="name.id"
+        v-for="menu in props.menus"
+        :menu="menu"
+        :panelItemState="menu.id === activeElem.id"
+        :key="menu.id"
         @was-clicked="refreshMenuItems"
       >
-        {{ name.name }}
+        {{ menu.name }}
       </panel-menu-item>
     </div>
     <menu-page-main 
       class="panel_menu__menu"
-      :actualName="activeElem.name"
+      :menus="props.menus"
+      :activeElem="activeElem"
     />
   </section>
 </template>
@@ -24,16 +25,8 @@ import PanelMenuItem from "@/components/site-body/MainRestaurant/MenuContent/Pan
 import MenuPageMain from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageMain";
 import {defineProps} from "vue";
 const props = defineProps({
-  names: {
+  menus: {
     value: Array,
-    default: () => (
-      [
-        { name: 'à la carte menu2222', id: '1' },
-        {name: 'rose brunch', id: '2'},
-        {name: 'cocktails', id: '3'},
-        {name: 'desserts', id: '4'},
-      ]
-    ),
   }
 });
 
@@ -42,13 +35,13 @@ function getStartElem(val) {
 }
 const activeElem = ref(getStartElem());
 
-watch(() => { return props.names; }, (val) => {
+watch(() => { return props.menus; }, (val) => {
   activeElem.value = getStartElem(val);
 });
 
 function refreshMenuItems(id) {
-  activeElem.value = props.names.find((name) => {
-    return name.id === id;
+  activeElem.value = props.menus.find((menu) => {
+    return menu.id === id;
   });
 }
 </script>

@@ -4,7 +4,7 @@
       @change-menu="changeMenu"
       class="menu-restaurant__head"/>
 <menu-restaurant-main-container
-    :names="names"
+    :menus="menus"
     class="menus-restaurant__main main-container"/>
   </div>
 </template>
@@ -12,9 +12,9 @@
 import MenuRestaurantHead from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHead";
 import MenuRestaurantMainContainer from "@/components/site-body/MainRestaurant/MenuContent/MenuRestaurantMainContainer";
 import {ref} from "vue";
-let names = ref([])
+let menus = ref([])
 function changeMenu(n){
-  names.value = n;
+  menus.value = n;
 }
 </script>
 

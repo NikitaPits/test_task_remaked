@@ -3,9 +3,11 @@
     <menu-page-logotype/>
     <menu-page-top
         class="page__top"
-        :actualName="props.actualName"
+        :actualName="props.activeElem.name"
     />
-    <div>{{actualName}}</div>
+    <menu-box-content
+        :activeElem="props.activeElem"
+        class="main-box-content"/>
   </div>
 </template>
 
@@ -13,11 +15,10 @@
 import {defineProps} from "vue";
 import MenuPageTop from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageTop";
 import MenuPageLogotype from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageLogotype";
-
-
+import MenuBoxContent from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuBoxContent";
 const props = defineProps({
-  actualName:{
-    type: String,
+  activeElem:{
+    type: Object,
     required: true
   }
 })
