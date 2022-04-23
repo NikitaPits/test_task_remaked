@@ -2,3 +2,12 @@
 @import "mixin";
 @import "fonts";
 
+.c-footer{
+  background-color: #fff;
+  color: #ababab!important;
+  margin-top: auto;
+  min-height: 350px;
+  padding: 50px 0 20px;
+  position: relative;
+  width: 100%;
+}
