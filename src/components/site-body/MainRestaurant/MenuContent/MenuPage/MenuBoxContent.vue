@@ -1,7 +1,9 @@
 <template>
   <div>
     <menu-chapter-box
-        :activeElem="props.activeElem"/>
+        :activeElem="props.activeElem"
+        :filters="props.filters"
+    />
   </div>
 </template>
 
@@ -12,6 +14,9 @@ import {defineProps} from "vue";
 const props = defineProps({
   activeElem: {
     type: Object
+  },
+  filters:{
+    type: Array
   }
 })
 </script>

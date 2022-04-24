@@ -4,7 +4,9 @@
        :key="chapter.id">
     <h4 class="chapter-title"
     >{{ chapter.title }}</h4>
-    <chapter-dishes :dishes="chapter.dishes"/>
+    <chapter-dishes
+        :filters="props.filters"
+        :dishes="chapter.dishes"/>
   </div>
 </template>
 
@@ -16,6 +18,9 @@ const props = defineProps({
   activeElem: {
     type: Object,
     required: true
+  },
+  filters:{
+    type: Array
   }
 })
 </script>

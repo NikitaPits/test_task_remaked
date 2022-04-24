@@ -1,10 +1,8 @@
 <template>
   <div class="menu__box">
     <menu-box-page
-        v-for="page in pages"
-        :key="page.id"
         :activeElem="activeElem"
-        v-bind:class="[props.activeElem.name!=page.name?'box__page_disabled':'box__page']"/>
+        class="box__page"/>
   </div>
 </template>
 
