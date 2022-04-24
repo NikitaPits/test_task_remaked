@@ -11,8 +11,9 @@
 import {defineProps} from "vue";
 import TopTitle from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageTopItems/TopTitle";
 import TopFilter from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageTopItems/TopFilter";
+
 const props = defineProps({
-  actualName:{
+  actualName: {
     type: String,
     required: true
   }

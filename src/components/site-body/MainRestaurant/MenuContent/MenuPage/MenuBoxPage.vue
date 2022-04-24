@@ -16,8 +16,9 @@ import {defineProps} from "vue";
 import MenuPageTop from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageTop";
 import MenuPageLogotype from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageLogotype";
 import MenuBoxContent from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuBoxContent";
+
 const props = defineProps({
-  activeElem:{
+  activeElem: {
     type: Object,
     required: true
   }

@@ -68,7 +68,7 @@ import {defineProps} from "vue";
 import {ref} from "vue";
 
 const props = defineProps({
-  color:{
+  color: {
     type: String,
     required: true
   }

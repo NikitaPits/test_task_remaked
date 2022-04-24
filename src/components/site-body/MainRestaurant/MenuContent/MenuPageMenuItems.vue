@@ -1,6 +1,6 @@
 <template>
   <div class="page__main">
- <menu-chapter-box/>
+    <menu-chapter-box/>
   </div>
 </template>
 

@@ -1,9 +1,11 @@
 <template>
   <div>
-<menu-restaurant-head-bg class="head__bg"/>
-  <menu-restaurant-head-title class="head__title"/>
+    <menu-restaurant-head-bg
+        :activeChooser="activeChooser"
+    />
+    <menu-restaurant-head-title class="head__title"/>
     <menu-restaurant-head-selector
-        @change-menu = 'changeMenu'
+        @change-menu='changeMenu'
         class="head__selector"/>
   </div>
 </template>
@@ -12,11 +14,14 @@
 import MenuRestaurantHeadBg from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadBg";
 import MenuRestaurantHeadTitle from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadTitle";
 import MenuRestaurantHeadSelector from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadSelector";
-import {defineEmits} from "vue";
-const emits = defineEmits(['change-menu'])
+import {defineEmits, ref} from "vue";
 
-function changeMenu(n){
+const emits = defineEmits(['change-menu'])
+const activeChooser = ref('first')
+
+function changeMenu(n, activeElem) {
   emits('change-menu', n)
+  activeChooser.value = activeElem
 }
 </script>
 

@@ -1,3 +1,4 @@
+@import "normalized";
 @import "variables";
 @import "mixin";
 @import "fonts";
@@ -6,6 +7,8 @@
 @import "Menus-restaurant";
 @import "menu-body";
 @import "menu-page";
+@import "site-footer";
+
 
 .app{
   background-color: $primary-color;
@@ -70,6 +73,12 @@ h3{
     color: #140906;
   font-size: 40px;
   }
+h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33em;
+}
+
 h6 {
   font-size: 15px;
   color: #140906;
@@ -86,4 +95,17 @@ h6 {
 }
 p{
   font-family: RockwellStd;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
 }

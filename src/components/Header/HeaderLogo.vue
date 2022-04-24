@@ -2,12 +2,12 @@
   <div class="site-header__logo">
 <site-logo
     :color="'#fff'"/>
-  <div class="site-header__logo-text">
+    <div class="site-header__logo-text">
       <span>
-        {{'at '}}
+        {{ 'at ' }}
       </span>
-    {{' THE SHARD'}}
-  </div>
+      {{ ' THE SHARD' }}
+    </div>
   </div>
 </template>
 

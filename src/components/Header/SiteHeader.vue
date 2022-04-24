@@ -1,13 +1,13 @@
 <template>
-<header
+  <header
       class="site-header">
-  <div
-      class="site-header__header-wrapper main-container">
-  <header-logo/>
-  <header-menu-container
-      class="site-header__header-menu-container"></header-menu-container>
-  </div>
-</header>
+    <div
+        class="site-header__header-wrapper main-container">
+      <header-logo/>
+      <header-menu-container
+          class="site-header__header-menu-container"></header-menu-container>
+    </div>
+  </header>
 </template>
 
 <script setup>

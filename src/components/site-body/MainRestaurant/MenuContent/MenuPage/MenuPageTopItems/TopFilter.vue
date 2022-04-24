@@ -1,7 +1,7 @@
 <template>
   <div>
-  <h6 class="filter__title">FILTER BY:</h6>
-<top-filter-selector class="filter__selector"/>
+    <h6 class="filter__title">FILTER BY:</h6>
+    <top-filter-selector class="filter__selector"/>
   </div>
 </template>
 
