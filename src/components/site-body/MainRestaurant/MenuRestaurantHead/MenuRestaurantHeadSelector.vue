@@ -25,26 +25,35 @@
 </template>
 
 <script setup>
-import {ref} from "vue"
+import {ref, onMounted} from "vue"
 import {defineEmits} from "vue";
-import jsonContent from '/src/assets/jsonContent/jsonContent.json'
+import api from "@/api/main";
 
+const jsonContent = ref([]);
+const ALL_TOURS_ENDPOINT = "/e1ba80b5-6f31-4a6e-914c-8f18f461a60e";
 let chosenFirst = ref(true)
 let chosenSecond = ref(false)
 const emits = defineEmits(['change-menu'])
-emits('change-menu', jsonContent[0])
+onMounted(async () => {
+  const {data} = await api.get(ALL_TOURS_ENDPOINT);
+  jsonContent.value = data;
+  emits('change-menu', jsonContent.value[0])
+});
+
 
 function chooseSelector1() {
   chosenFirst.value = true
   chosenSecond.value = false
-  emits('change-menu', jsonContent[0], 'menus-1')
+  emits('change-menu', jsonContent.value[0], 'menus-1')
 }
 
 function chooseSelector2() {
   chosenFirst.value = false
   chosenSecond.value = true
-  emits('change-menu', jsonContent[1], 'menus-2')
+  emits('change-menu', jsonContent.value[1], 'menus-2')
 }
+
+
 </script>
 <style scoped>
 </style>

@@ -107,7 +107,7 @@
 }
 .c-footer .logo-footer .text span {
   bottom: 4.5px;
-  font-family: Muli-Bold;
+  font-family: Muli-ExtraBold, Serif;
   font-size: 9px;
   font-weight: 700;
   letter-spacing: .3px;
@@ -124,3 +124,53 @@
   text-align: center;
   width: 9px;
 }
+.c-footer .subscribe__form .button.u-margin-none[type=submit], .c-footer .subscribe__form .wpcf7-form-control.wpcf7-submit {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  height: auto;
+  letter-spacing: .5px;
+  max-width: 50%;
+  padding: 12px 7px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition-duration: .4s;
+  font-family: Muli-Bold;
+  transition-duration: .4s;
+  -webkit-transition-property: all;
+  transition-property: all;
+  background-color: inherit;
+  border: 4px solid #1f1917;
+  color: #1f1917;
+  margin-top: -11px;
+  min-width: 100%;
+  width: 100%;
+
+  &:hover {
+    background-color: #000;
+    border: 4px solid #000;
+    color: #fff;
+  }
+}
+.c-footer .c-footer__inner .c-part .double-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.c-footer .subscribe__form .button.u-margin-none[type=submit] {
+  margin-top: 13px!important;
+}
+.c-footer .c-footer__inner .c-part li {
+  margin-bottom: 10px;
+}
+.c-footer .c-footer__inner .c-part li, .c-footer .c-footer__inner .c-part p {
+  font-family: RockwellStd;
+  font-size: 15px;
+  letter-spacing: .2px;
+  line-height: 1.47;
+}
+
+
