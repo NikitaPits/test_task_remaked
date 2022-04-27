@@ -7,11 +7,12 @@
   font-weight: 300;
   color: #140906;
   display: flex;
+  font-size: 21px;
   align-items: flex-start;
 }
 .dish{
   margin-right: 8%;
-  font-size: 21px;
+
   font-family: inherit;
   font-weight: inherit;
   bottom: inherit;
@@ -20,7 +21,7 @@
   color: #a59e9e;
   font-family: Muli-Bold;
   margin-left: auto;
-  font-size: 16px;
+
 }
 .dish-ingredients{
   color: #a59e9e;
@@ -49,4 +50,15 @@
   justify-content: space-between;
   height: auto;
   flex-wrap: wrap;
+}
+@media  (max-width: 900px){
+  .dish-container{
+    font-size: 16px;
+  }
+  .dish-ingredients{
+    font-size: 16px;
+  }
+  .menu__box .page__logotype-svg{
+    width: 100px;
+  }
 }

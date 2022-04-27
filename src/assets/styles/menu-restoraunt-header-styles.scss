@@ -10,6 +10,7 @@
   overflow: hidden;
   top: 90px;
   align-items:center;
+  width: 100%;
 }
 .menus-restaurant__head>* {
   z-index: 1;
@@ -74,6 +75,7 @@
   height: 99px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .selector__one{
   margin-left: 5%;
@@ -108,4 +110,12 @@
   align-items: center;
   border-bottom: 4px solid #ffffff;
   box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .head__selector-title{
+    font-size: 36px;
+  }
+  .head__selector{
+    height: 70px;
+  }
 }

@@ -2,7 +2,7 @@
 @import "mixin";
 @import "fonts";
 
-.c-footer{
+.c-footer {
   background-color: #fff;
   color: #ababab;
   margin-top: auto;
@@ -11,9 +11,11 @@
   position: relative;
   width: 100%;
 }
+
 .c-footer .o-wrapper {
   width: 100%;
 }
+
 .c-footer .c-footer__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22,6 +24,7 @@
   -ms-flex-pack: stretch;
   justify-content: stretch;
 }
+
 .c-footer .c-footer__inner .c-part {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,17 +33,21 @@
   -ms-flex: 1 1 26%;
   flex: 1 1 26%;
 }
+
 .c-footer .c-footer__inner .c-part .c-row.one {
   width: 150px;
 }
+
 .c-footer .c-footer__inner .c-part .c-row {
   min-width: 105px;
 }
+
 .c-footer .c-footer__inner .c-part .underliner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .c-footer .c-footer__inner .c-part h5 {
   border-bottom: 4px solid #1f1917;
   color: #1f1917;
@@ -50,16 +57,19 @@
   margin-bottom: 21px;
   width: 100%;
 }
+
 .c-footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 .c-footer .social a .s-icon {
   height: 14px;
   width: 20px;
   margin-right: 21px;
 }
+
 .c-footer .c-footer__inner .c-part:last-of-type {
   -webkit-box-flex: 4;
   -ms-flex: 4 1 70%;
@@ -68,6 +78,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .c-footer .subscribe__form input[type=email] {
   border: 0;
   font-family: RockwellStd;
@@ -80,12 +91,14 @@
   padding: 0;
   width: 100%;
 }
+
 .c-footer .subscribe__form [type=checkbox] {
   height: 0;
   opacity: 0;
   width: 0;
 }
-.c-footer .subscribe__form [type=checkbox]+span:after {
+
+.c-footer .subscribe__form [type=checkbox] + span:after {
   background-color: #fff;
   content: "";
   height: 6px;
@@ -96,7 +109,8 @@
   transition: background-color .2s ease;
   width: 6px;
 }
-.c-footer .subscribe__form [type=checkbox]+span {
+
+.c-footer .subscribe__form [type=checkbox] + span {
   cursor: pointer;
   font-family: Muli-Regular;
   font-line-height: 1.33em;
@@ -105,6 +119,7 @@
   position: relative;
   text-align: left;
 }
+
 .c-footer .logo-footer .text span {
   bottom: 4.5px;
   font-family: Muli-ExtraBold, Serif;
@@ -114,6 +129,7 @@
   position: relative;
   text-transform: lowercase;
 }
+
 .c-footer .logo-footer .text span:before {
   border-bottom: 1px solid #1f1917;
   bottom: -2px;
@@ -124,6 +140,7 @@
   text-align: center;
   width: 9px;
 }
+
 .c-footer .subscribe__form .button.u-margin-none[type=submit], .c-footer .subscribe__form .wpcf7-form-control.wpcf7-submit {
   cursor: pointer;
   display: inline-block;
@@ -152,6 +169,7 @@
     color: #fff;
   }
 }
+
 .c-footer .c-footer__inner .c-part .double-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,12 +178,15 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
 .c-footer .subscribe__form .button.u-margin-none[type=submit] {
-  margin-top: 13px!important;
+  margin-top: 13px !important;
 }
+
 .c-footer .c-footer__inner .c-part li {
   margin-bottom: 10px;
 }
+
 .c-footer .c-footer__inner .c-part li, .c-footer .c-footer__inner .c-part p {
   font-family: RockwellStd;
   font-size: 15px;
@@ -173,4 +194,26 @@
   line-height: 1.47;
 }
 
-
+@media (max-width: 900px) {
+  .main-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 605px;
+  }
+  .c-part {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-footer__inner{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .foot-book{
+    height: 100px;
+  }
+  .foot-book .site-header__button{
+    margin: 0;
+  }
+}

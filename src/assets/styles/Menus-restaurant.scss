@@ -23,6 +23,7 @@
   background-size: cover;
   height: 280px;
   position: relative;
+  width: 100%;
 }
 .foot-book:before {
   background-color: #140906;
@@ -33,6 +34,7 @@
   position: absolute;
   right: 0;
   top: 0;
+  width: 100%;
 }
 .foot-book__button{
   background-color: transparent;
@@ -56,5 +58,29 @@
     background-color: #fff;
     border: 4px solid #fff;
     color: #000;
+  }
+}
+
+@media  (max-width: 900px){
+  .main-box-content{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    flex-direction: column;
+  }
+  .main__description{
+    flex-direction: column;
+  }
+  .head__bg{
+    height: 300px;
+  }
+  .menu-restaurant__head{
+    height: 300px;
+  }
+  .menus-restaurant__main .description__content p {
+    font-size: 18px;
+  }
+  .box__page h3{
+    font-size: 25px;
   }
 }

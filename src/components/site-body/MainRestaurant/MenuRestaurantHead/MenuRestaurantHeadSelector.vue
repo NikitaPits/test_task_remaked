@@ -30,12 +30,12 @@ import {defineEmits} from "vue";
 import api from "@/api/main";
 
 const jsonContent = ref([]);
-const ALL_TOURS_ENDPOINT = "/e1ba80b5-6f31-4a6e-914c-8f18f461a60e";
+const JSON_CONTENT = "/e1ba80b5-6f31-4a6e-914c-8f18f461a60e";
 let chosenFirst = ref(true)
 let chosenSecond = ref(false)
 const emits = defineEmits(['change-menu'])
 onMounted(async () => {
-  const {data} = await api.get(ALL_TOURS_ENDPOINT);
+  const {data} = await api.get(JSON_CONTENT);
   jsonContent.value = data;
   emits('change-menu', jsonContent.value[0])
 });

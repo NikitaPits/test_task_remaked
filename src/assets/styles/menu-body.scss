@@ -1,10 +1,15 @@
 @import "variables";
 @import "mixin";
 @import "fonts";
+
 .main-restaurant-body {
   overflow: hidden;
+  align-items: center;
+  display: flex;
+
 }
-.main__description{
+
+.main__description {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -16,10 +21,11 @@
   justify-content: space-between;
   margin-bottom: 70px;
 }
-.description__content{
+
+.description__content {
   margin-right: 21px;
   color: #fff;
-  font-family: RockwellStd-Light,serif;
+  font-family: RockwellStd-Light, serif;
   font-size: 21px;
   font-weight: 300;
   letter-spacing: .023em;
@@ -35,7 +41,8 @@
   max-width: 745px;
   align-items: center;
 }
-.description__link{
+
+.description__link {
   font-family: Muli-Bold;
   font-size: 15px;
   padding-bottom: 12px;
@@ -43,6 +50,7 @@
   text-transform: uppercase;
   white-space: nowrap;
 }
+
 .description__link:after {
   background-color: #fff;
   bottom: 0;
@@ -52,7 +60,8 @@
   position: absolute;
   right: 0;
 }
-.panel-menu__сuisine{
+
+.panel-menu__сuisine {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +73,7 @@
   margin-bottom: 60px;
   position: relative;
 }
+
 .сuisine__one {
   border: 4px solid #fff;
   cursor: pointer;
@@ -75,10 +85,11 @@
   padding: 24px 20px;
   text-align: center;
   text-transform: uppercase;
-  -webkit-transition: opacity .5s ease,-webkit-transform .5s ease;
-  transition: opacity .5s ease,transform .5s ease,-webkit-transform .5s ease;
+  -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease;
   z-index: 11;
 }
+
 .сuisine__one_active {
   border: 4px solid #fff;
   cursor: pointer;
@@ -90,10 +101,52 @@
   padding: 24px 20px;
   text-align: center;
   text-transform: uppercase;
-  -webkit-transition: opacity .5s ease,-webkit-transform .5s ease;
-  transition: opacity .5s ease,transform .5s ease,-webkit-transform .5s ease;
+  -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease;
   z-index: 30;
 }
-.panel-menu{
+
+.panel-menu {
   padding-bottom: 91px;
+}
+
+@media (max-width: 900px) {
+  .panel-menu .menu__box {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .panel-menu .menu-chapter-box {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 10px;
+  }
+  .menus-restaurant__main {
+    padding-top: 30px;
+  }
+  .main__description {
+    margin-bottom: 20px;
+  }
+  .title__h {
+    margin-bottom: 3px;
+  }
+  .box__page .page__top {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .box__page .page__top .top__filter {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .panel-menu {
+    padding-bottom: 30px;
+  }
+  .panel-menu__сuisine {
+    margin-bottom: 0;
+  }
 }
