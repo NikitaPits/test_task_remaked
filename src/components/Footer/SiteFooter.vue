@@ -1,14 +1,16 @@
 <template>
   <div class="c-footer">
-    <div class="o-wrapper">
+    <div class="o-wrapper main-container">
       <div class="c-footer__inner">
         <div class="c-part">
+          <div class="logo-footer">
           <site-logo :color="'#000'"/>
           <div class="text">
       <span>
         {{ 'at ' }}
       </span>
             {{ ' THE SHARD' }}
+          </div>
           </div>
         </div>
         <div class="c-part">

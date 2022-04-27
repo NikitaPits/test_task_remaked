@@ -11,11 +11,43 @@
   position: relative;
   width: 100%;
 }
-
-.c-footer .o-wrapper {
-  width: 100%;
+.c-footer .subscribe__form [type=checkbox]+span:before {
+  border: 1px solid #ababab;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 12px;
 }
-
+ .c-footer .subscribe__form [type=checkbox] + span:after {
+   background-color: #fff;
+   content: "";
+   height: 6px;
+   left: 3px;
+   position: absolute;
+   top: 5px;
+   transition: background-color 0.2s ease;
+   width: 6px;
+ }
+.c-footer .o-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.c-footer .c-footer__inner .c-part .c-row.three {
+  width: 200px;
+}
+.c-footer .c-footer__inner .c-part .c-row.one {
+  width: 150px;
+}
+.c-footer .c-footer__inner .c-part .c-row.two {
+  width: 249px;
+}
+.c-footer .c-footer__inner .c-part .c-row.four {
+  width: 161px;
+}
 .c-footer .c-footer__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,6 +152,7 @@
   text-align: left;
 }
 
+
 .c-footer .logo-footer .text span {
   bottom: 4.5px;
   font-family: Muli-ExtraBold, Serif;
@@ -140,7 +173,39 @@
   text-align: center;
   width: 9px;
 }
-
+.c-footer .logo-footer {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 180px;
+  width: 180px;
+  margin-right: 70px;
+  z-index: 20;
+  color: #140906;
+}
+.c-footer .copyright {
+  border-top: 2px solid #ababab;
+  color: #ababab;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-top: 14px;
+}
+.c-footer .c-footer__inner .c-part .c-row.one p {
+  margin-bottom: 20px!important;
+}
 .c-footer .subscribe__form .button.u-margin-none[type=submit], .c-footer .subscribe__form .wpcf7-form-control.wpcf7-submit {
   cursor: pointer;
   display: inline-block;
@@ -152,7 +217,7 @@
   text-align: center;
   text-transform: uppercase;
   -webkit-transition-duration: .4s;
-  font-family: Muli-Bold;
+  font-family: Muli-ExtraBold, Serif;
   transition-duration: .4s;
   -webkit-transition-property: all;
   transition-property: all;
