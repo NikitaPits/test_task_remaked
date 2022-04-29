@@ -16,7 +16,7 @@ const props = defineProps({
     type: Object
   },
   filters:{
-    type: Array
+    type: Object
   }
 })
 </script>

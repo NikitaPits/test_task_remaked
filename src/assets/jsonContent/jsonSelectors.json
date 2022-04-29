@@ -1,0 +1,12 @@
+[
+  {
+    "name": "West",
+    "id": "west",
+    "image": "menus-1"
+  },
+  {
+    "name": "East",
+    "id": "east",
+    "image": "menus-2"
+  }
+]

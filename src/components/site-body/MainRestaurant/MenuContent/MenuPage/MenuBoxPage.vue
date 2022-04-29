@@ -3,14 +3,13 @@
     <menu-page-logotype/>
     <menu-page-top
         v-if="props.activeElem.name"
-        @vegetarianFilterState="checkVegetarian"
-        @nutsFilterState="checkNuts"
+        @filters="filters"
         class="page__top"
         :actualName="props.activeElem.name"
     />
     <menu-box-content
         :activeElem="props.activeElem"
-        :filters="filters"
+        :filters="filtersObj"
         class="main-box-content"/>
   </div>
 </template>
@@ -26,15 +25,12 @@ const props = defineProps({
     type: Object
   }
 })
-const filters = ref([false, false])
-
-function checkVegetarian(vegetarianFilterState) {
-  filters.value[0] = vegetarianFilterState
+let filtersObj = ref({})
+function filters(filters){
+  filtersObj.value=filters;
 }
 
-function checkNuts(nutsFilterState) {
-  filters.value[1] = nutsFilterState
-}
+
 </script>
 
 <style scoped>

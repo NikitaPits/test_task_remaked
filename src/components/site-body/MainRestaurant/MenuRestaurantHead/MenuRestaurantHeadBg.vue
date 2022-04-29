@@ -8,13 +8,13 @@
 import {computed, defineProps} from "vue";
 
 const props = defineProps({
-  activeChooser: {
+  currentImage: {
     type: String
   }
 })
 const computedStyle = computed(() => {
 
-  return {backgroundImage: `url(/img/${props.activeChooser ? props.activeChooser : 'menus-1'}.jpg)`}
+  return {backgroundImage: `url(/img/${props.currentImage ? props.currentImage : 'menus-1'}.jpg)`}
 })
 </script>
 

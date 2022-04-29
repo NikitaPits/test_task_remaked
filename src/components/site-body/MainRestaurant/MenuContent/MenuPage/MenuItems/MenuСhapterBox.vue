@@ -20,7 +20,7 @@ const props = defineProps({
     required: true
   },
   filters:{
-    type: Array
+    type: Object
   }
 })
 </script>

@@ -3,7 +3,7 @@
        v-for="dish in props.dishes"
        :key="dish.id">
     <p class="dish"
-       :style="[dish.isVegan && props.filters[0] || dish.nutsContain && props.filters[1] ? computedStyle: '']"
+       :style="[dish.isVegan && filters[0]?.state || dish.nutsContain && filters[1]?.state ? computedStyle: '']"
     >{{ dish.title }}
       <span class="dish-ingredients"
             :style="computedStyle"
@@ -24,11 +24,10 @@ const props = defineProps({
     type: Array
   },
   filters: {
-    type: Array
+    type: Object
   }
 })
 const computedStyle = computed(() => {
-
   return {color: `#d0cecd`}
 })
 </script>

@@ -1,15 +1,9 @@
 <template>
   <div class="selector__list-f">
     <div>
-      <h6 v-bind:class="[filterVegetarian?'list-f__one_active':'list-f__one']"
-          @click="filterVegetarianClicked()">
-        Vegetarian
-      </h6>
-    </div>
-    <div>
-      <h6 v-bind:class="[filterContainNuts?'list-f__one_active':'list-f__one']"
-          @click="filterContainNutsClicked()">
-        Contains Nuts
+      <h6 v-bind:class="[picked?'list-f__one_active':'list-f__one']"
+          @click="isPicked">
+        <slot></slot>
       </h6>
     </div>
   </div>
@@ -17,21 +11,21 @@
 
 <script setup>
 import {ref} from "vue";
-import {defineEmits} from "vue";
+import {defineEmits, defineProps} from "vue";
 
-let filterVegetarian = ref(false);
-let filterContainNuts = ref(false);
-const emits = defineEmits(['vegetarianFilterState','nutsFilterState'])
+const props = defineProps({
+  filter:{
+    type:Object
+  }
+})
+let picked = ref(props.filter.state);
+const emits = defineEmits(['picked-filter'])
 
-function filterVegetarianClicked() {
-  filterVegetarian.value = !filterVegetarian.value
-  emits('vegetarianFilterState', filterVegetarian.value)
+function isPicked() {
+  picked.value = !picked.value
+  emits('picked-filter', picked.value, props.filter.id)
 }
 
-function filterContainNutsClicked() {
-  filterContainNuts.value = !filterContainNuts.value
-  emits('nutsFilterState', filterContainNuts.value)
-}
 </script>
 
 <style scoped>

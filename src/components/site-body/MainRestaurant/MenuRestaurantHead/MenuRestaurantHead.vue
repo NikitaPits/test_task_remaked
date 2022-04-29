@@ -1,7 +1,7 @@
 <template>
   <div>
     <menu-restaurant-head-bg
-        :activeChooser="activeChooser"
+        :currentImage="currentImage"
     />
     <menu-restaurant-head-title class="head__title"/>
     <menu-restaurant-head-selector
@@ -17,11 +17,11 @@ import MenuRestaurantHeadSelector from "@/components/site-body/MainRestaurant/Me
 import {defineEmits, ref} from "vue";
 
 const emits = defineEmits(['change-menu'])
-const activeChooser = ref('first')
+const currentImage = ref('menus-1')
 
-function changeMenu(n, activeElem) {
-  emits('change-menu', n)
-  activeChooser.value = activeElem
+function changeMenu(menuId, menuImage) {
+  emits('change-menu', menuId)
+  currentImage.value = menuImage
 }
 </script>
 

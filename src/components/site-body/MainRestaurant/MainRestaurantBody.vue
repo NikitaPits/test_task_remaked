@@ -16,11 +16,24 @@ import MenuRestaurantHead from "@/components/site-body/MainRestaurant/MenuRestau
 import MenuRestaurantMainContainer from "@/components/site-body/MainRestaurant/MenuContent/MenuRestaurantMainContainer";
 import {ref} from "vue";
 import MyButton from "@/components/UI/MyButton";
+import {onMounted} from "vue";
+import api from "@/api/main";
 
-let menus = ref([])
+const JSON_CONTENT = "/6c1b1d6b-1978-49bf-81db-563d073fdaf5";
+const jsonContent = ref([])
+let menus = ref()
+onMounted(async () => {
+  const {data} = await api.get(JSON_CONTENT);
+  jsonContent.value = data;
+  menus.value=jsonContent.value[0].content
+});
 
-function changeMenu(n) {
-  menus.value = n;
+function changeMenu(menuId) {
+  jsonContent.value.forEach(element => {
+    if(element.id === menuId){
+      menus.value = element.content
+    }
+  });
 }
 </script>
 

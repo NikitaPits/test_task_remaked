@@ -5,8 +5,7 @@
         :actualName="props.actualName"/>
     <top-filter
         class="top__filter"
-        @vegetarianFilterState="checkVegetarian"
-        @nutsFilterState="checkNuts"
+        @filters="getFilters"
     />
   </div>
 </template>
@@ -17,7 +16,7 @@ import {defineProps, defineEmits} from "vue";
 import TopTitle from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageTopItems/TopTitle";
 import TopFilter from "@/components/site-body/MainRestaurant/MenuContent/MenuPage/MenuPageTopItems/TopFilter";
 
-const emits = defineEmits(['vegetarianFilterState','nutsFilterState'])
+const emits = defineEmits(['filters'])
 const props = defineProps({
   actualName: {
     type: String,
@@ -25,13 +24,9 @@ const props = defineProps({
   }
 })
 
-function checkVegetarian(vegetarianFilterState){
-  emits('vegetarianFilterState', vegetarianFilterState)
+function getFilters(filters){
+  emits('filters',filters)
 }
-function checkNuts(nutsFilterState){
-  emits('nutsFilterState', nutsFilterState)
-}
-
 </script>
 
 <style scoped>

@@ -1,451 +1,457 @@
 [
-  [
-    {
-      "name": "à la carte menu",
-      "id": "12sad",
-      "content": [
-        {
-          "title": "",
-          "dishes": [
-            {
-              "title": "Available Monday – Sunday dinner",
-              "ingredients": "",
-              "price": "",
-              "isVegan": true,
-              "nutsContain": false
-            }
-          ]
-        },
-        {
-          "title": "snacks",
-          "dishes": [
-            {
-              "title": "seasonal crudités (v)",
-              "ingredients": "",
-              "price": "9",
-              "isVegan": false,
-              "nutsContain": true
-            },
-            {
-              "title": "seared smoked salmon",
-              "ingredients": "",
-              "price": "10",
-              "isVegan": false,
-              "nutsContain": false
-            },
-            {
-              "title": "iberico bellota ham (50g)",
-              "ingredients": "",
-              "price": "21",
-              "isVegan": false,
-              "nutsContain": false
-            }
-          ]
-        },
-        {
-          "title": "raw bar",
-          "dishes": [
-            {
-              "title": "marinated tuna slices",
-              "ingredients": "avocado, garlic & chilli",
-              "price": "19",
-              "isVegan": false,
-              "nutsContain": false
-            },
-            {
-              "title": "beef carpaccio",
-              "ingredients": "mustard dressing, parmesan & herbs",
-              "price": "22",
-              "isVegan": false,
-              "nutsContain": false
-            },
-            {
-              "title": "steak tartare",
-              "ingredients": "aged cheddar & beef tomato",
-              "price": "22",
-              "isVegan": true,
-              "nutsContain": false
-            },
-            {
-              "title": "diver scallops",
-              "ingredients": "truffle & artichoke",
-              "price": "25",
-              "isVegan": false,
-              "nutsContain": false
-            }
-          ]
-        },
-        {
-          "title": "raw bar",
-          "dishes": [
-            {
-              "title": "marinated tuna slices",
-              "ingredients": "avocado, garlic & chilli",
-              "price": "19",
-              "isVegan": true,
-              "nutsContain": false
-            },
-            {
-              "title": "beef carpaccio",
-              "ingredients": "mustard dressing, parmesan & herbs",
-              "price": "22",
-              "isVegan": true,
-              "nutsContain": false
-            },
-            {
-              "title": "steak tartare",
-              "ingredients": "aged cheddar & beef tomato",
-              "price": "22",
-              "isVegan": true,
-              "nutsContain": false
-            },
-            {
-              "title": "diver scallops",
-              "ingredients": "truffle & artichoke",
-              "price": "25",
-              "isVegan": true,
-              "nutsContain": false
-            }
-          ]
-        },
-        {
-          "title": "snacks",
-          "dishes": [
-            {
-              "title": "seasonal crudités (v)",
-              "ingredients": "",
-              "price": "9",
-              "isVegan": false,
-              "nutsContain": false
-            },
-            {
-              "title": "seared smoked salmon",
-              "ingredients": "",
-              "price": "10",
-              "isVegan": true,
-              "nutsContain": true
-            },
-            {
-              "title": "iberico bellota ham (50g)",
-              "ingredients": "",
-              "price": "21",
-              "isVegan": true,
-              "nutsContain": false
-            }
-          ]
+  {
+    "id": "west",
+    "content": [
+      {
+        "name": "à la carte menu",
+        "id": "12sad",
+        "content": [
+          {
+            "title": "",
+            "dishes": [
+              {
+                "title": "Available Monday – Sunday dinner",
+                "ingredients": "",
+                "price": "",
+                "isVegan": true,
+                "nutsContain": false
+              }
+            ]
+          },
+          {
+            "title": "snacks",
+            "dishes": [
+              {
+                "title": "seasonal crudités (v)",
+                "ingredients": "",
+                "price": "9",
+                "isVegan": false,
+                "nutsContain": true
+              },
+              {
+                "title": "seared smoked salmon",
+                "ingredients": "",
+                "price": "10",
+                "isVegan": false,
+                "nutsContain": false
+              },
+              {
+                "title": "iberico bellota ham (50g)",
+                "ingredients": "",
+                "price": "21",
+                "isVegan": false,
+                "nutsContain": false
+              }
+            ]
+          },
+          {
+            "title": "raw bar",
+            "dishes": [
+              {
+                "title": "marinated tuna slices",
+                "ingredients": "avocado, garlic & chilli",
+                "price": "19",
+                "isVegan": false,
+                "nutsContain": false
+              },
+              {
+                "title": "beef carpaccio",
+                "ingredients": "mustard dressing, parmesan & herbs",
+                "price": "22",
+                "isVegan": false,
+                "nutsContain": false
+              },
+              {
+                "title": "steak tartare",
+                "ingredients": "aged cheddar & beef tomato",
+                "price": "22",
+                "isVegan": true,
+                "nutsContain": false
+              },
+              {
+                "title": "diver scallops",
+                "ingredients": "truffle & artichoke",
+                "price": "25",
+                "isVegan": false,
+                "nutsContain": false
+              }
+            ]
+          },
+          {
+            "title": "raw bar",
+            "dishes": [
+              {
+                "title": "marinated tuna slices",
+                "ingredients": "avocado, garlic & chilli",
+                "price": "19",
+                "isVegan": true,
+                "nutsContain": false
+              },
+              {
+                "title": "beef carpaccio",
+                "ingredients": "mustard dressing, parmesan & herbs",
+                "price": "22",
+                "isVegan": true,
+                "nutsContain": false
+              },
+              {
+                "title": "steak tartare",
+                "ingredients": "aged cheddar & beef tomato",
+                "price": "22",
+                "isVegan": true,
+                "nutsContain": false
+              },
+              {
+                "title": "diver scallops",
+                "ingredients": "truffle & artichoke",
+                "price": "25",
+                "isVegan": true,
+                "nutsContain": false
+              }
+            ]
+          },
+          {
+            "title": "snacks",
+            "dishes": [
+              {
+                "title": "seasonal crudités (v)",
+                "ingredients": "",
+                "price": "9",
+                "isVegan": false,
+                "nutsContain": false
+              },
+              {
+                "title": "seared smoked salmon",
+                "ingredients": "",
+                "price": "10",
+                "isVegan": true,
+                "nutsContain": true
+              },
+              {
+                "title": "iberico bellota ham (50g)",
+                "ingredients": "",
+                "price": "21",
+                "isVegan": true,
+                "nutsContain": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "rose brunch",
+        "id": "13",
+        "content": [
+          {
+            "title": "",
+            "dishes": [
+              {
+                "title": "Available Monday – Sunday dinner",
+                "ingredients": "",
+                "price": "",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "test",
+            "dishes": [
+              {
+                "title": "seasonal crudités (v)",
+                "ingredients": "",
+                "price": "9",
+                "isVegan": true
+              },
+              {
+                "title": "seared smoked salmon",
+                "ingredients": "",
+                "price": "10",
+                "isVegan": true
+              },
+              {
+                "title": "iberico bellota ham (50g)",
+                "ingredients": "",
+                "price": "21",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "test",
+            "dishes": [
+              {
+                "title": "marinated tuna slices",
+                "ingredients": "avocado, garlic & chilli",
+                "price": "19",
+                "isVegan": true
+              },
+              {
+                "title": "beef carpaccio",
+                "ingredients": "mustard dressing, parmesan & herbs",
+                "price": "22",
+                "isVegan": true
+              },
+              {
+                "title": "test",
+                "ingredients": "aged cheddar & beef tomato",
+                "price": "22",
+                "isVegan": true
+              },
+              {
+                "title": "diver scallops",
+                "ingredients": "truffle & artichoke",
+                "price": "25",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "raw bar",
+            "dishes": [
+              {
+                "title": "marinated tuna slices",
+                "ingredients": "avocado, garlic & chilli",
+                "price": "19",
+                "isVegan": true
+              },
+              {
+                "title": "beef carpaccio",
+                "ingredients": "mustard dressing, parmesan & herbs",
+                "price": "22",
+                "isVegan": true
+              },
+              {
+                "title": "steak tartare",
+                "ingredients": "aged cheddar & beef tomato",
+                "price": "22",
+                "isVegan": true
+              },
+              {
+                "title": "diver scallops",
+                "ingredients": "truffle & artichoke",
+                "price": "25",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "snacks",
+            "dishes": [
+              {
+                "title": "seasonal crudités (v)",
+                "ingredients": "",
+                "price": "9",
+                "isVegan": true
+              },
+              {
+                "title": "seared smoked salmon",
+                "ingredients": "",
+                "price": "10",
+                "isVegan": true
+              },
+              {
+                "title": "iberico bellota ham (50g)",
+                "ingredients": "",
+                "price": "21",
+                "isVegan": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "cocktails",
+        "id": "14",
+        "content": [
+          {
+            "title": "",
+            "dishes": [
+              {
+                "title": "Available Monday – Sunday dinner",
+                "ingredients": "",
+                "price": "",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "snacks",
+            "dishes": [
+              {
+                "title": "seasonal crudités (v)",
+                "ingredients": "",
+                "price": "9",
+                "isVegan": true
+              },
+              {
+                "title": "seared smoked salmon",
+                "ingredients": "",
+                "price": "10",
+                "isVegan": true
+              },
+              {
+                "title": "iberico bellota ham (50g)",
+                "ingredients": "",
+                "price": "21",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "raw bar",
+            "dishes": [
+              {
+                "title": "marinated tuna slices",
+                "ingredients": "avocado, garlic & chilli",
+                "price": "19",
+                "isVegan": true
+              },
+              {
+                "title": "beef carpaccio",
+                "ingredients": "mustard dressing, parmesan & herbs",
+                "price": "22",
+                "isVegan": true
+              },
+              {
+                "title": "steak tartare",
+                "ingredients": "aged cheddar & beef tomato",
+                "price": "22",
+                "isVegan": true
+              },
+              {
+                "title": "diver scallops",
+                "ingredients": "truffle & artichoke",
+                "price": "25",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "raw bar",
+            "dishes": [
+              {
+                "title": "marinated tuna slices",
+                "ingredients": "avocado, garlic & chilli",
+                "price": "19",
+                "isVegan": true
+              },
+              {
+                "title": "beef carpaccio",
+                "ingredients": "mustard dressing, parmesan & herbs",
+                "price": "22",
+                "isVegan": true
+              },
+              {
+                "title": "steak tartare",
+                "ingredients": "aged cheddar & beef tomato",
+                "price": "22",
+                "isVegan": true
+              },
+              {
+                "title": "diver scallops",
+                "ingredients": "truffle & artichoke",
+                "price": "25",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "snacks",
+            "dishes": [
+              {
+                "title": "seasonal crudités (v)",
+                "ingredients": "",
+                "price": "9",
+                "isVegan": true
+              },
+              {
+                "title": "seared smoked salmon",
+                "ingredients": "",
+                "price": "10",
+                "isVegan": true
+              },
+              {
+                "title": "iberico bellota ham (50g)",
+                "ingredients": "",
+                "price": "21",
+                "isVegan": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "desserts",
+        "id": "12s",
+        "content": [
+          {
+            "title": "",
+            "dishes": [
+              {
+                "title": "Available Monday – Sunday dinner",
+                "ingredients": "",
+                "price": "",
+                "isVegan": true
+              }
+            ]
+          },
+          {
+            "title": "snacks",
+            "dishes": [
+              {
+                "title": "seasonal crudités (v)",
+                "ingredients": "",
+                "price": "9",
+                "isVegan": true
+              },
+              {
+                "title": "seared smoked salmon",
+                "ingredients": "",
+                "price": "10",
+                "isVegan": true
+              },
+              {
+                "title": "iberico bellota ham (50g)",
+                "ingredients": "",
+                "price": "21",
+                "isVegan": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "east",
+    "content": [
+      {
+        "name": "Bar menu",
+        "id": "1",
+        "content": {
+          "title": "rotisserie and grill",
+          "dishes": {
+          }
         }
-      ]
-    },
-    {
-      "name": "rose brunch",
-      "id": "13",
-      "content": [
-        {
-          "title": "",
-          "dishes": [
-            {
-              "title": "Available Monday – Sunday dinner",
-              "ingredients": "",
-              "price": "",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "test",
-          "dishes": [
-            {
-              "title": "seasonal crudités (v)",
-              "ingredients": "",
-              "price": "9",
-              "isVegan": true
-            },
-            {
-              "title": "seared smoked salmon",
-              "ingredients": "",
-              "price": "10",
-              "isVegan": true
-            },
-            {
-              "title": "iberico bellota ham (50g)",
-              "ingredients": "",
-              "price": "21",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "test",
-          "dishes": [
-            {
-              "title": "marinated tuna slices",
-              "ingredients": "avocado, garlic & chilli",
-              "price": "19",
-              "isVegan": true
-            },
-            {
-              "title": "beef carpaccio",
-              "ingredients": "mustard dressing, parmesan & herbs",
-              "price": "22",
-              "isVegan": true
-            },
-            {
-              "title": "test",
-              "ingredients": "aged cheddar & beef tomato",
-              "price": "22",
-              "isVegan": true
-            },
-            {
-              "title": "diver scallops",
-              "ingredients": "truffle & artichoke",
-              "price": "25",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "raw bar",
-          "dishes": [
-            {
-              "title": "marinated tuna slices",
-              "ingredients": "avocado, garlic & chilli",
-              "price": "19",
-              "isVegan": true
-            },
-            {
-              "title": "beef carpaccio",
-              "ingredients": "mustard dressing, parmesan & herbs",
-              "price": "22",
-              "isVegan": true
-            },
-            {
-              "title": "steak tartare",
-              "ingredients": "aged cheddar & beef tomato",
-              "price": "22",
-              "isVegan": true
-            },
-            {
-              "title": "diver scallops",
-              "ingredients": "truffle & artichoke",
-              "price": "25",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "snacks",
-          "dishes": [
-            {
-              "title": "seasonal crudités (v)",
-              "ingredients": "",
-              "price": "9",
-              "isVegan": true
-            },
-            {
-              "title": "seared smoked salmon",
-              "ingredients": "",
-              "price": "10",
-              "isVegan": true
-            },
-            {
-              "title": "iberico bellota ham (50g)",
-              "ingredients": "",
-              "price": "21",
-              "isVegan": true
-            }
-          ]
+      },
+      {
+        "name": "Afternoon tea",
+        "id": "2",
+        "content": {
+          "title": "rotisserie and grill",
+          "dishes": {
+          }
         }
-      ]
-    },
-    {
-      "name": "cocktails",
-      "id": "14",
-      "content": [
-        {
-          "title": "",
-          "dishes": [
-            {
-              "title": "Available Monday – Sunday dinner",
-              "ingredients": "",
-              "price": "",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "snacks",
-          "dishes": [
-            {
-              "title": "seasonal crudités (v)",
-              "ingredients": "",
-              "price": "9",
-              "isVegan": true
-            },
-            {
-              "title": "seared smoked salmon",
-              "ingredients": "",
-              "price": "10",
-              "isVegan": true
-            },
-            {
-              "title": "iberico bellota ham (50g)",
-              "ingredients": "",
-              "price": "21",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "raw bar",
-          "dishes": [
-            {
-              "title": "marinated tuna slices",
-              "ingredients": "avocado, garlic & chilli",
-              "price": "19",
-              "isVegan": true
-            },
-            {
-              "title": "beef carpaccio",
-              "ingredients": "mustard dressing, parmesan & herbs",
-              "price": "22",
-              "isVegan": true
-            },
-            {
-              "title": "steak tartare",
-              "ingredients": "aged cheddar & beef tomato",
-              "price": "22",
-              "isVegan": true
-            },
-            {
-              "title": "diver scallops",
-              "ingredients": "truffle & artichoke",
-              "price": "25",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "raw bar",
-          "dishes": [
-            {
-              "title": "marinated tuna slices",
-              "ingredients": "avocado, garlic & chilli",
-              "price": "19",
-              "isVegan": true
-            },
-            {
-              "title": "beef carpaccio",
-              "ingredients": "mustard dressing, parmesan & herbs",
-              "price": "22",
-              "isVegan": true
-            },
-            {
-              "title": "steak tartare",
-              "ingredients": "aged cheddar & beef tomato",
-              "price": "22",
-              "isVegan": true
-            },
-            {
-              "title": "diver scallops",
-              "ingredients": "truffle & artichoke",
-              "price": "25",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "snacks",
-          "dishes": [
-            {
-              "title": "seasonal crudités (v)",
-              "ingredients": "",
-              "price": "9",
-              "isVegan": true
-            },
-            {
-              "title": "seared smoked salmon",
-              "ingredients": "",
-              "price": "10",
-              "isVegan": true
-            },
-            {
-              "title": "iberico bellota ham (50g)",
-              "ingredients": "",
-              "price": "21",
-              "isVegan": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "desserts",
-      "id": "12s",
-      "content": [
-        {
-          "title": "",
-          "dishes": [
-            {
-              "title": "Available Monday – Sunday dinner",
-              "ingredients": "",
-              "price": "",
-              "isVegan": true
-            }
-          ]
-        },
-        {
-          "title": "snacks",
-          "dishes": [
-            {
-              "title": "seasonal crudités (v)",
-              "ingredients": "",
-              "price": "9",
-              "isVegan": true
-            },
-            {
-              "title": "seared smoked salmon",
-              "ingredients": "",
-              "price": "10",
-              "isVegan": true
-            },
-            {
-              "title": "iberico bellota ham (50g)",
-              "ingredients": "",
-              "price": "21",
-              "isVegan": true
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "name": "Bar menu",
-      "id": "1",
-      "content": {
-        "title": "rotisserie and grill",
-        "dishes": {
+      },
+      {
+        "name": "oblix easy",
+        "id": "3",
+        "content": {
+          "title": "rotisserie and grill",
+          "dishes": {
+          }
         }
       }
-    },
-    {
-      "name": "Afternoon tea",
-      "id": "2",
-      "content": {
-        "title": "rotisserie and grill",
-        "dishes": {
-        }
-      }
-    },
-    {
-      "name": "oblix easy",
-      "id": "3",
-      "content": {
-        "title": "rotisserie and grill",
-        "dishes": {
-        }
-      }
-    }
-  ]
+    ]
+  }
 ]

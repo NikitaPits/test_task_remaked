@@ -1,0 +1,12 @@
+[
+  {
+    "id": "isVegan",
+    "name": "Vegetarian",
+    "state": false
+  },
+  {
+    "id": "nutsContain",
+    "name": "Contains Nuts",
+    "state": false
+  }
+]
