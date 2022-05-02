@@ -1,7 +1,7 @@
 <template>
   <div>
     <menu-restaurant-head-bg
-        :currentImage="currentImage"
+        :currentImage="props.currentImage"
     />
     <menu-restaurant-head-title class="head__title"/>
     <menu-restaurant-head-selector
@@ -14,14 +14,17 @@
 import MenuRestaurantHeadBg from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadBg";
 import MenuRestaurantHeadTitle from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadTitle";
 import MenuRestaurantHeadSelector from "@/components/site-body/MainRestaurant/MenuRestaurantHead/MenuRestaurantHeadSelector";
-import {defineEmits, ref} from "vue";
-
+import {defineEmits,defineProps} from "vue";
+const props = defineProps({
+  currentImage:{
+    type: String
+  }
+})
 const emits = defineEmits(['change-menu'])
-const currentImage = ref('menus-1')
 
-function changeMenu(menuId, menuImage) {
+
+function changeMenu(menuId) {
   emits('change-menu', menuId)
-  currentImage.value = menuImage
 }
 </script>
 

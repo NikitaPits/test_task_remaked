@@ -3,33 +3,38 @@
        v-for="dish in props.dishes"
        :key="dish.id">
     <p class="dish"
-       :style="[dish.isVegan && filters[0]?.state || dish.nutsContain && filters[1]?.state ? computedStyle: '']"
+       :style="isPassive(dish) ? computedStyle: ''"
     >{{ dish.title }}
       <span class="dish-ingredients"
             :style="computedStyle"
       >
       {{ dish.ingredients }}
-    </span></p>
+    </span>
+    </p>
 
     <p class="dish-price">{{ dish.price }}</p>
   </div>
 </template>
 
 <script setup>
-import {defineProps} from "vue";
-import {computed} from "vue";
+import {defineProps, toRefs} from "vue";
 
 const props = defineProps({
   dishes: {
     type: Array
   },
   filters: {
-    type: Object
+    type: Array
   }
 })
-const computedStyle = computed(() => {
-  return {color: `#d0cecd`}
-})
+const computedStyle = {color: `#d0cecd`}
+const { filters } = toRefs(props)
+
+function isPassive(dish) {
+  return (filters.value || []).some(filter => {
+    return !dish[filter.id] && filter.state;
+  });
+}
 </script>
 
 <style scoped>

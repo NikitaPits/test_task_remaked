@@ -23,13 +23,11 @@ import HeadSelectorItem from "@/components/site-body/MainRestaurant/MenuRestaura
 
 const emits = defineEmits(['change-menu'])
 
-let currentImage = ref('')
 let currentId = ref('')
 
-function change(id, image) {
+function change(id) {
   currentId.value = id;
-  currentImage.value = image;
-  emits('change-menu', currentId.value, currentImage.value)
+  emits('change-menu', currentId.value)
 }
 
 </script>

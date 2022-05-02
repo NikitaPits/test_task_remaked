@@ -1,12 +1,10 @@
 [
   {
     "name": "West",
-    "id": "west",
-    "image": "menus-1"
+    "id": "west"
   },
   {
     "name": "East",
-    "id": "east",
-    "image": "menus-2"
+    "id": "east"
   }
 ]

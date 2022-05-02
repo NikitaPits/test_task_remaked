@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click="say">
     <menu-chapter-box
         :activeElem="props.activeElem"
         :filters="props.filters"
@@ -16,9 +16,10 @@ const props = defineProps({
     type: Object
   },
   filters:{
-    type: Object
+    type: Array
   }
 })
+
 </script>
 
 <style scoped>

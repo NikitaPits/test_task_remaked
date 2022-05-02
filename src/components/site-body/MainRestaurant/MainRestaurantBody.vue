@@ -2,7 +2,9 @@
   <div>
     <menu-restaurant-head
         @change-menu="changeMenu"
-        class="menu-restaurant__head"/>
+        class="menu-restaurant__head"
+        :currentImage = "currentImage"
+    />
     <menu-restaurant-main-container
         :menus="menus"
         class="menus-restaurant__main main-container"/>
@@ -19,9 +21,10 @@ import MyButton from "@/components/UI/MyButton";
 import {onMounted} from "vue";
 import api from "@/api/main";
 
-const JSON_CONTENT = "/6c1b1d6b-1978-49bf-81db-563d073fdaf5";
+const JSON_CONTENT = "/fdafaccd-1d4c-408f-94d4-80462cc8fdcb";
 const jsonContent = ref([])
 let menus = ref()
+let currentImage = ref()
 onMounted(async () => {
   const {data} = await api.get(JSON_CONTENT);
   jsonContent.value = data;
@@ -32,6 +35,7 @@ function changeMenu(menuId) {
   jsonContent.value.forEach(element => {
     if(element.id === menuId){
       menus.value = element.content
+      currentImage.value = element.image
     }
   });
 }

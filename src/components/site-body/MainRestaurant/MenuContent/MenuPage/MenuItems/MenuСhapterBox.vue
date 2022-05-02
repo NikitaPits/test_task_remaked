@@ -1,9 +1,11 @@
 <template>
   <div class="menu-chapter-box"
        v-for="chapter in props.activeElem.content"
-       :key="chapter.id">
+       :key="chapter.id"
+  >
     <h4 class="chapter-title"
-    >{{ chapter.title }}</h4>
+    >{{ chapter.title }}
+    </h4>
     <chapter-dishes
         :filters="props.filters"
         :dishes="chapter.dishes"/>
@@ -20,9 +22,10 @@ const props = defineProps({
     required: true
   },
   filters:{
-    type: Object
+    type: Array
   }
 })
+
 </script>
 
 <style scoped>

@@ -1,6 +1,7 @@
 [
   {
     "id": "west",
+    "image": "menus-1",
     "content": [
       {
         "name": "à la carte menu",
@@ -424,6 +425,7 @@
   },
   {
     "id": "east",
+    "image": "menus-2",
     "content": [
       {
         "name": "Bar menu",

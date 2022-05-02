@@ -3,14 +3,15 @@
     <menu-page-logotype/>
     <menu-page-top
         v-if="props.activeElem.name"
-        @filters="filters"
+        @filters="getFilters"
         class="page__top"
         :actualName="props.activeElem.name"
     />
     <menu-box-content
         :activeElem="props.activeElem"
-        :filters="filtersObj"
+        :filters="filtersV"
         class="main-box-content"/>
+
   </div>
 </template>
 
@@ -25,9 +26,10 @@ const props = defineProps({
     type: Object
   }
 })
-let filtersObj = ref({})
-function filters(filters){
-  filtersObj.value=filters;
+let filtersV = ref([])
+
+function getFilters(filters){
+  filtersV.value=filters;
 }
 
 

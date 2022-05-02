@@ -19,7 +19,7 @@ const props = defineProps({
 })
 emits('change-menu', 'west', 'menus-1')
 function chooseSelector() {
-  emits('change-menu', props.selector.id, props.selector.image)
+  emits('change-menu', props.selector.id)
   chosen.value=!chosen.value
 }
 </script>
